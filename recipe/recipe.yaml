@@ -1,5 +1,5 @@
 context:
-  version: "0.3.0"
+  version: "0.3.1"
   # magnelio requires Python >= 3.11 (PEP 604 unions in dataclass fields,
   # tomllib) — raise the floor above the conda-forge default.
   python_min: "3.11"
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/magnelio/magnelio-${{ version }}.tar.gz
-  sha256: 8b3c65d8418eb176031d02f3eeccde4ba4fc99ec3aaa946cfca9d5f76c825dac
+  sha256: 9cfe648ef82db115ec575735157cd1e20fcebbadb97d47c335faa2fd5cf5cf61
 
 build:
   noarch: python
