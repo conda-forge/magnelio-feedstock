@@ -1,5 +1,12 @@
 context:
   version: "0.5.2"
+  # magnelio requires Python >= 3.11 (PEP 604 unions in dataclass fields,
+  # tomllib).  The linter asks for this redefinition to be removed,
+  # claiming the global pinning is already at or above it — it is not:
+  # removing it built against 3.10.21 and pip refused the wheel
+  # ("requires a different Python: 3.10.21 not in '>=3.11'"), see the
+  # first CI run of PR #14.  Keep it until the global floor really moves.
+  python_min: "3.11"
 
 package:
   name: magnelio
