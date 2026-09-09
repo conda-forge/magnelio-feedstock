@@ -1,5 +1,5 @@
 context:
-  version: "0.8.1"
+  version: "0.8.2"
   # magnelio requires Python >= 3.11 (PEP 604 unions in dataclass fields,
   # tomllib).  The linter asks for this redefinition to be removed,
   # claiming the global pinning is already at or above it — it is not:
@@ -14,7 +14,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/magnelio/magnelio-${{ version }}.tar.gz
-  sha256: a45e35175f12906904fd82ab518ed9db680148beed3cf566edc666774a9c9061
+  sha256: d6a581ff7c2583093961c38bcd6ccbc0d2510910d83dea08210a7f1f01797da5
 
 build:
   noarch: python
